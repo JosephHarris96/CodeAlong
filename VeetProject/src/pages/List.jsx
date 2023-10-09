@@ -1,13 +1,15 @@
-import React from "react"
-
+import React from "react";
+import Button from "@mui/material/Button";
 
 function List() {
-    return (
-        <>
-        
-        <h1>List</h1>
-        </>
-    )
+  return (
+    <>
+      <h1>List</h1>
+      <Button variant="text">Text</Button>
+      <Button variant="contained">Contained</Button>
+      <Button variant="outlined">Outlined</Button>
+    </>
+  );
 }
 
-export default List
+export default List;
