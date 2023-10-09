@@ -5,16 +5,20 @@ import Update from './pages/Update'
 import List from './pages/List'
 import NotFound from './pages/NotFound'
 
+import Layout from './Layout'
+
 
 function App() {
   return (
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<List />}/> 
+        <Route path="/" element={<Layout />}>
+        <Route index element={<List />}/> 
         <Route path="/add" element={<Add />}/> 
         <Route path="/update" element={<Update />}/> 
         <Route path="*" element={<NotFound />}/>
+        </Route>
       </Routes>
     </Router>
     </>
