@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import TempHeader from './components/TempHeader';
+import Container from '@mui/material/Container';
 
 function Layout() {
     return (
@@ -10,7 +11,10 @@ function Layout() {
             <TempHeader />
         </header>
         <main>
-            <Outlet />
+            <Container maxWidth="md">
+        <Outlet />
+            </Container>
+        
  
         </main>
         </>
