@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<List />} />
-            <Route path="/add" element={<Add />} />
+            <Route path="/add" element={<Add />} />{" "}
             <Route path="/update/:id" element={<Update />} />
             <Route path="*" element={<NotFound />} />
           </Route>

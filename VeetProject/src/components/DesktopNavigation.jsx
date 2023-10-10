@@ -41,7 +41,7 @@ function DesktopNavigation({
             CarsApp
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Link to="/add-car" style={{ textDecoration: 'none' }}>
+            <Link to="/add" style={{ textDecoration: 'none' }}>
               <Button color="inherit">Add Car</Button>
             </Link>
           </Box>
